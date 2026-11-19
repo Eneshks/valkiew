@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs><radialGradient id="g" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#2e2416"/><stop offset="1" stop-color="#0f0d0b"/></radialGradient></defs>
+  <rect width="512" height="512" fill="url(#g)"/>
+  <rect x="24" y="24" width="464" height="464" fill="none" stroke="#d4af37" stroke-width="10"/>
+  <rect x="44" y="44" width="424" height="424" fill="none" stroke="#d4af37" stroke-width="3" opacity=".6"/>
+  <!-- fötr şapka -->
+  <ellipse cx="256" cy="300" rx="170" ry="34" fill="#d4af37"/>
+  <path d="M146 300 C150 200 180 150 256 150 C332 150 362 200 366 300 Z" fill="#d4af37"/>
+  <path d="M206 168 Q256 196 306 168" stroke="#0f0d0b" stroke-width="12" fill="none"/>
+  <rect x="150" y="262" width="212" height="26" fill="#b3202a"/>
+  <text x="256" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#d4af37" letter-spacing="10">V</text>
+</svg>
