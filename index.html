@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#151827">
+  <title>Valkiew – Mafya Şehri</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="map" aria-label="Şehir haritası"></canvas>
+
+    <header id="hud">
+      <button class="avatar" data-open="malikane" title="Profil">🕴️</button>
+      <div class="chips">
+        <div class="chip rank" title="Rütbe">
+          <span class="ic">⭐</span>
+          <div class="rank-txt"><b id="h-rank">Çaylak</b><div class="bar"><i id="h-xp"></i></div></div>
+        </div>
+        <div class="chip" title="Enerji"><span class="ic">⚡</span><span id="h-energy">0</span></div>
+        <div class="chip" title="Can"><span class="ic">❤️</span><span id="h-health">0</span></div>
+        <div class="chip" title="Mermi"><span class="ic">🔫</span><span id="h-ammo">0</span></div>
+        <div class="chip" title="Şehir"><span class="ic">📍</span><span id="h-city">İstanbul</span></div>
+      </div>
+      <div class="wallet">
+        <div class="chip money" title="Nakit"><span class="ic">💵</span><span id="h-money">0</span></div>
+        <div class="chip gems" title="Elmas"><span class="ic">💎</span><span id="h-gems">0</span></div>
+      </div>
+    </header>
+
+    <div id="status" hidden></div>
+
+    <div id="zoom">
+      <button data-zoom="1.2" title="Yakınlaştır">＋</button>
+      <button data-zoom="0.83" title="Uzaklaştır">－</button>
+      <button data-fit title="Haritayı ortala">⌖</button>
+    </div>
+
+    <nav id="dock">
+      <button data-open="meyhane"><span>🥃</span>Suç</button>
+      <button data-open="garaj"><span>🚗</span>Araba</button>
+      <button data-open="arkasokak"><span>💀</span>Dövüş</button>
+      <button data-open="envanter"><span>🎒</span>Çanta</button>
+      <button data-open="gunluk"><span>📜</span>Günlük</button>
+    </nav>
+
+    <div id="panel" hidden>
+      <div class="sheet" role="dialog" aria-modal="true">
+        <header>
+          <span class="p-icon" id="p-icon"></span>
+          <div><h2 id="p-title"></h2><p id="p-desc"></p></div>
+          <button class="close" data-close aria-label="Kapat">✕</button>
+        </header>
+        <div class="body" id="p-body"></div>
+      </div>
+    </div>
+
+    <div id="toasts"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
